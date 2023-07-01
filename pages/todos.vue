@@ -6,7 +6,7 @@
     >
       Create Todo
     </button>
-    <div v-for="todo in todos" :key="todo.id" class="flex items-center">
+    <div v-for="todo in todos" :key="todo.id" class="flex items-center flex-wrap">
       <p class="bg-zinc-200 w-2/3 px-2 py-1 rounded">{{ todo.task }}</p><span @click="toggleComplete(todo)" :class="['bg-zinc-200', 'py-1', 'px-2', 'w-fit', 'cursor-pointer', 'text-center', 'ml-auto', 'm-3', 'rounded', { 'text-red-500': !todo.is_complete, 'text-green-500': todo.is_complete }]">{{ todo.is_complete ? 'Completed ✅' : 'Pending ⌛' }}</span>
       <button @click="deleteTodo(todo)"><IconsDeleteIcon class="cursor-pointer text-red-500 bg-red-800 bg-opacity-40 p-2  rounded w-8 h-8"/></button>
     </div>
