@@ -19,7 +19,7 @@
       <form
         action=""
         @submit.prevent="handleTodo"
-        class="w-1/2 m-auto p-10 border border-slate-700 rounded-md flex flex-col bg-white py-9 px-4 rounded-3xl mx-3 transition-all duration-300 ease-linear"
+        class="w-3/4 m-auto p-10 border border-slate-700 rounded-md flex flex-col bg-white py-9 px-4 rounded-3xl mx-3 transition-all duration-300 ease-linear"
       >
         <IconsCloseIcon
           @click="modalOpen = false"
