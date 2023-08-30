@@ -22,9 +22,8 @@ async function handleLogin() {
 <template>
   <h1 class="text-center">Log in to your account</h1>
   <form
-    action=""
     @submit.prevent="handleLogin"
-    class="mt-7 w-1/2 m-auto p-10 border border-slate-700 rounded-md flex flex-col"
+    class="mt-7 w-4/5 m-auto p-10 border border-slate-700 rounded-md flex flex-col"
   >
     <label class="block text-sm md:text-base md:pb-2" for="Email"
       >Enter email address</label

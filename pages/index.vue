@@ -32,9 +32,8 @@ const handleSignup = async () => {
 <div v-else>
   <h1 class="text-center">Create account</h1>
   <form
-    action=""
     @submit.prevent="handleSignup"
-    class="mt-7 w-1/2 m-auto p-10 border border-slate-700 rounded-md flex flex-col"
+    class="mt-7 w-4/5 m-auto p-10 border border-slate-700 rounded-md flex flex-col"
   >
     <span
       class="text-sm ml-1 mt-1 text-green-800 bg-green-400 px-2 rounded-md"
