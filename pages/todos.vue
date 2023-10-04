@@ -86,6 +86,7 @@ async function handleTodo() {
         // Data was successfully inserted into the table
         console.log('Todo data saved:', data);
         getTodoData()
+        modalOpen.value = false
       }
     } catch (error) {
       // Handle any unexpected errors
